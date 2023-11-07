@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+header {
+  max-width: 1440px;
+  height: 608px;
+  background-color: #3DE07E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburgarMenu {
+ padding: 1rem;
+ margin-right: auto;
+}
+
+h1 {
+  font-size: 102px;
+  font-weight: 700;
+}
+
+.ninjaHuvud {
+
+}
