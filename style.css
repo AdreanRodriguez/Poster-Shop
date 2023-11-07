@@ -6,23 +6,36 @@ header {
   max-width: 1440px;
   height: 608px;
   background-color: #3DE07E;
-  display: flex;
+  /*display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between;*/
+  
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+      "hamburgarMenu . . . ."
+      ". h1 h1 h1 ."
+      ". . ninjaHuvud ninjaHuvud .";
 }
 
 .hamburgarMenu {
  padding: 1rem;
  margin-right: auto;
+ grid-area: hamburgarMenu;
 }
 
 h1 {
   font-size: 102px;
   font-weight: 700;
+  grid-area: h1;
+  justify-self: center;
 }
 
 .ninjaHuvud {
-
+grid-area: ninjaHuvud;
+align-self: end;
 }
+
